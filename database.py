@@ -1,4 +1,4 @@
-import pyodbc
+import pyodbc #biblioteca usada para se conectar com um banco de dados
 
 dados = (
     "Driver={driver};"
@@ -17,7 +17,7 @@ print("yes")
 
 cursor = conexao.cursor()
 
-comando = f"""insert into dados values(
+comando = f"""insert into values(dados 
     default, '{nome}', '{usuario}', '{senha}');"""
 
 cursor.execute(comando)
